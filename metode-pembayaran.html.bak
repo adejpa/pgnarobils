@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narobil</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <main class="wrapper">
+        <div class="container container-pg">
+            <div class="content">
+                <div class="card card-left">
+                    <div class="card-header">
+                        <img src="assets/img/logo.png" width="32" height="32" alt="Narobil">
+                        <img src="assets/img/profile-akun.png" class="img-fluid" width="32" height="32" alt="User">
+                        <div class="d-flex flex-column">
+                            <p class="from-text">Dari :</p>
+                            <p class="from-value">Mario Putra</p>
+                        </div>
+                    </div>
+                    <div class="card-total">
+                        <div class="total-value">
+                            <p>Total Tagihan</p>
+                            <h6>Rp 100.000</h6>
+                        </div>
+                        <a href="javascript:;" class="action-detail-payment" data-toggle="modal" data-target="#modal-detail">Lihat Detail</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-detail-payment">
+                            <div class="detail-payment-item">
+                                <p class="label">No Invoice</p>
+                                <p class="value">INV-000009</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">Nama</p>
+                                <p class="value">Satria Pratama</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">Telepon</p>
+                                <p class="value">081234567890</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">Email</p>
+                                <p class="value">satriapratama@gmail.com</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">Deskripsi</p>
+                                <p class="value">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, vero. Ea sed cumque odit doloremque, libero dolorem repudiandae amet illum modi ducimus dicta ratione, eum delectus hic vero numquam unde.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-right">
+                    <div class="card-header">
+                        <div class="d-flex flex-column">
+                            <h3 class="card-title">Metode Pembayaran</h3>
+                            <p class="card-subtitle">Pilih metode pembayaran Anda untuk bayar tagihan</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-payment">
+                            <div class="payment-item">
+                                <div class="item-content">
+                                    <img src="assets/img/ic-wallet.png" width="44" alt="E-Money">
+                                    <div class="d-flex flex-column">
+                                        <p class="mb-0 font-weight-bold">E-Money</p>
+                                        <p class="mb-0">Fello, Doku, Dana</p>
+                                    </div>
+                                </div>
+                                <img src="assets/img/ic_arrow_right.png" alt="arrow_right">
+                            </div>
+                            <div class="payment-item">
+                                <div class="item-content">
+                                    <img src="assets/img/ic-bank-mandiri.png" width="44" alt="Mandiri VA">
+                                    <div class="d-flex flex-column">
+                                        <p class="mb-0 font-weight-bold">Mandiri Virtual Account</p>
+                                        <p class="mb-0">Mobile Banking, ATM, Internet Banking</p>
+                                    </div>
+                                </div>
+                                <img src="assets/img/ic_arrow_right.png" alt="arrow_right">
+                            </div>
+                            <div class="payment-item">
+                                <div class="item-content">
+                                    <img src="assets/img/ic-bank-bca.png" width="44" alt="BCA VA">
+                                    <div class="d-flex flex-column">
+                                        <p class="mb-0 font-weight-bold">BCA Virtual Account</p>
+                                        <p class="mb-0">Mobile Banking, ATM, Klik BCA</p>
+                                    </div>
+                                </div>
+                                <img src="assets/img/ic_arrow_right.png" alt="arrow_right">
+                            </div>
+                            <div class="payment-item">
+                                <div class="item-content">
+                                    <img src="assets/img/ic-transfer-bank.png" width="44" alt="Transfer Bank">
+                                    <div class="d-flex flex-column">
+                                        <p class="mb-0 font-weight-bold">Transfer Bank</p>
+                                        <p class="mb-0">Transfer melalui bank lainnya</p>
+                                    </div>
+                                </div>
+                                <img src="assets/img/ic_arrow_right.png" alt="arrow_right">
+                            </div>
+                            <div class="payment-item">
+                                <div class="item-content">
+                                    <img src="assets/img/ic-gerai-retail.png" width="44" alt="Gerai Retail">
+                                    <div class="d-flex flex-column">
+                                        <p class="mb-0 font-weight-bold">Gerai Retail</p>
+                                        <p class="mb-0">Alfamart, Alfamidi, Indomaret, Dandan</p>
+                                    </div>
+                                </div>
+                                <img src="assets/img/ic_arrow_right.png" alt="arrow_right">
+                            </div>
+                            <div class="payment-item">
+                                <div class="item-content">
+                                    <img src="assets/img/ic-kartu-kredit.png" width="44" alt="Kartu Kredit">
+                                    <div class="d-flex flex-column">
+                                        <p class="mb-0 font-weight-bold">Kartu Kredit</p>
+                                        <p class="mb-0">Visa, Mastercard, JCB</p>
+                                    </div>
+                                </div>
+                                <img src="assets/img/ic_arrow_right.png" alt="arrow_right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-konfirmasi" tabindex="-1" role="dialog" aria-labelledby="modal-konfirmasi" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-start px-4">
+                        <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/ic-close.svg" class="pb-1" width="16">
+                        </a>
+                        <h5 class="modal-title">Konfirmasi</h5>
+                    </div>
+                    <div class="modal-body px-4">
+                        <p class="text-left text-description">Pastikan metode pembayaran yang dipilih sudah sesuai. Ketika lanjutkan, metode pembayaran tidak dapat diganti.</p>
+                        <div class="list-payment">
+                            <div class="payment-item">
+                                <div class="item-content">
+                                    <img src="assets/img/ic-bank-mandiri.png" width="44" alt="Mandiri VA">
+                                    <div class="d-flex flex-column">
+                                        <p class="mb-0 font-weight-bold">Mandiri Virtual Account</p>
+                                        <p class="mb-0">Mobile Banking, ATM, Internet Banking</p>
+                                    </div>
+                                </div>
+                                <img src="assets/img/ic_arrow_right.png" alt="arrow_right">
+                            </div>
+                        </div>
+                        <a href="login.html" class="btn btn-info btn-submit">Lanjutkan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-detail" tabindex="-1" role="dialog" aria-labelledby="modal-detail" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-start px-4">
+                        <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/ic-close.svg" class="pb-1" width="16">
+                        </a>
+                        <h5 class="modal-title">Detail Tagihan</h5>
+                    </div>
+                    <div class="modal-body px-4">
+                        <div class="list-detail-payment mb-4">
+                            <div class="detail-payment-item">
+                                <p class="label">Total</p>
+                                <p class="value value-total">Rp 100.000</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">No Invoice</p>
+                                <p class="value">INV-000009</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">Nama</p>
+                                <p class="value">Satria Pratama</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">Telepon</p>
+                                <p class="value">081234567890</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">Email</p>
+                                <p class="value">satriapratama@gmail.com</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">Deskripsi</p>
+                                <p class="value">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, vero. Ea sed cumque odit doloremque, libero dolorem repudiandae amet illum modi ducimus dicta ratione, eum delectus hic vero numquam unde.</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-info btn-submit" data-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".payment-item").on("click", function() {
+                let logo = $(this).find(".item-content img").attr("src");
+                let metodeName = $(this).find(".font-weight-bold").text();
+                let metodeDescription = $(this).find("p:last-child").text();
+
+                $("#modal-konfirmasi").find(".item-content img").attr("src", logo);
+                $("#modal-konfirmasi").find(".font-weight-bold").text(metodeName);
+                $("#modal-konfirmasi").find("p:last-child").text(metodeDescription);
+                $("#modal-konfirmasi").find(".btn-submit").attr("href", metodeName == "E-Money" ? "login.html" : "#");
+                $("#modal-konfirmasi").modal("show");
+            });
+        });
+    </script>
+</body>
+</html>

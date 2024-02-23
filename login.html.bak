@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narobil</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <main class="wrapper">
+        <div class="container container-pg">
+            <div class="content">
+                <div class="card card-left">
+                    <div class="card-header">
+                        <img src="assets/img/logo.png" width="32" height="32" alt="Narobil">
+                        <img src="assets/img/profile-akun.png" class="img-fluid" width="32" height="32" alt="User">
+                        <div class="d-flex flex-column">
+                            <p class="from-text">Dari :</p>
+                            <p class="from-value">Mario Putra</p>
+                        </div>
+                    </div>
+                    <div class="card-total">
+                        <div class="total-value">
+                            <p>Total Tagihan</p>
+                            <h6>Rp 100.000</h6>
+                        </div>
+                        <a href="javascript:;" class="action-detail-payment" data-toggle="modal" data-target="#modal-detail">Lihat Detail</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-detail-payment">
+                            <div class="detail-payment-item">
+                                <p class="label">No Invoice</p>
+                                <p class="value">INV-000009</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">Nama</p>
+                                <p class="value">Satria Pratama</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">Telepon</p>
+                                <p class="value">081234567890</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">Email</p>
+                                <p class="value">satriapratama@gmail.com</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">Deskripsi</p>
+                                <p class="value">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, vero. Ea sed cumque odit doloremque, libero dolorem repudiandae amet illum modi ducimus dicta ratione, eum delectus hic vero numquam unde.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-right">
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="login">
+                            <div class="card-header">
+                                <div class="d-flex flex-column">
+                                    <h3 class="card-title">Masuk</h3>
+                                    <p class="card-subtitle">Silahkan masuk terlebih dahulu untuk mendapatkan daftar e-money yang sudah terhubung</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <form action="" method="POST" class="form-pg need-validation mb-4" novalidate>
+                                    <div class="form-group">
+                                        <label for="inputNoTelp">No Handphone</label>
+                                        <input type="text" class="form-control" id="inputNoTelp" placeholder="Masukkan No Handphone Anda" aria-describedby="inputNoTelp" required="">
+                                        <div class="invalid-feedback error-msg">
+                                            No Telepon tidak boleh kosong.
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-group-password">
+                                        <label for="inputPassword" class="label-password-with">Password</label>
+                                        <input type="password" name="password" class="form-control" id="inputPassword" required placeholder="Masukan Password Anda" data-toggle="password"> 
+                                        <div class="invalid-feedback error-msg">
+                                            Password tidak boleh kosong.
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center flex-column-reverse">
+                                    <div class="d-flex align-items-center">
+                                        Belum punya akun? <a href="#" data-target="#register" class="font-weight-bold ml-1 link-toggle">Daftar</a>
+                                    </div>
+                                    <a href="metode-pembayaran-emoney.html" class="btn btn-info btn-submit">Masuk</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="register">
+                            <div class="card-header">
+                                <div class="d-flex flex-column">
+                                    <h3 class="card-title">Daftar</h3>
+                                    <p class="card-subtitle">Silahkan daftar terlebih dahulu untuk melanjutkan</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <form action="" method="POST" class="form-pg need-validation mb-4" novalidate>
+                                    <div class="form-group">
+                                        <label for="inputNoTelpRegister">No Handphone</label>
+                                        <input type="text" class="form-control" id="inputNoTelpRegister" placeholder="Masukkan No Handphone Anda" aria-describedby="inputNoTelpRegister" required="">
+                                        <div class="invalid-feedback error-msg">
+                                            No Telepon tidak boleh kosong.
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-group-password">
+                                        <label for="inputPasswordRegister" class="label-password-with">Password</label>
+                                        <input type="password" name="password" class="form-control" id="inputPasswordRegister" required placeholder="Masukan Password Anda" data-toggle="password"> 
+                                        <div class="invalid-feedback error-msg">
+                                            Password tidak boleh kosong.
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-group-password">
+                                        <label for="inputKonfirmasiPassword" class="label-password-with">Konfirmasi Password</label>
+                                        <input type="password" name="password" class="form-control" id="inputKonfirmasiPassword" required placeholder="Masukan Konfirmasi Password" data-toggle="password"> 
+                                        <div class="invalid-feedback error-msg">
+                                            Konfirmasi password tidak boleh kosong.
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center flex-column-reverse">
+                                    <div class="d-flex align-items-center">
+                                        Sudah punya akun? <a href="javascript:;" data-target="#login" class="font-weight-bold ml-1 link-toggle">Masuk</a>
+                                    </div>
+                                    <a href="metode-pembayaran-emoney-empty.html" class="btn btn-info btn-submit">Lanjutkan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-detail" tabindex="-1" role="dialog" aria-labelledby="modal-detail" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-start px-4">
+                        <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/ic-close.svg" class="pb-1" width="16">
+                        </a>
+                        <h5 class="modal-title">Detail Tagihan</h5>
+                    </div>
+                    <div class="modal-body px-4">
+                        <div class="list-detail-payment mb-4">
+                            <div class="detail-payment-item">
+                                <p class="label">Total</p>
+                                <p class="value value-total">Rp 100.000</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">No Invoice</p>
+                                <p class="value">INV-000009</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">Nama</p>
+                                <p class="value">Satria Pratama</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">Telepon</p>
+                                <p class="value">081234567890</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">Email</p>
+                                <p class="value">satriapratama@gmail.com</p>
+                            </div>
+                            <div class="detail-payment-item">
+                                <p class="label">Deskripsi</p>
+                                <p class="value">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, vero. Ea sed cumque odit doloremque, libero dolorem repudiandae amet illum modi ducimus dicta ratione, eum delectus hic vero numquam unde.</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-info btn-submit" data-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-show-password.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#inputNoTelp").keypress(function(event) {
+                return /\d/.test(String.fromCharCode(event.keyCode));
+            });
+
+            $(".link-toggle").on("click", function() {
+                if ($(this).data("target") == "#register") {
+                    $("#login").removeClass("show");
+                    setTimeout(() => {
+                        $("#login").removeClass("active");
+                        $("#register").addClass("show");
+                        $("#register").addClass("active");
+                    }, 200);
+                } else {
+                    $("#register").removeClass("show");
+                    setTimeout(() => {
+                        $("#register").removeClass("active");
+                        $("#login").addClass("show");
+                        $("#login").addClass("active");
+                    }, 200);
+                }
+            });
+
+            $(".btn-submit").on("click", function() {
+                $("form").submit();
+            });
+        });
+    </script>
+</body>
+</html>

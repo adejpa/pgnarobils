@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narobil</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <main class="wrapper">
+        <div class="container container-pg">
+            <div class="content gap-0">
+                <div class="card card-left">
+                    <div class="card-header">
+                        <img src="assets/img/logo.png" width="32" height="32" alt="Narobil">
+                        <img src="assets/img/profile-akun.png" class="img-fluid" width="32" height="32" alt="User">
+                        <div class="d-flex flex-column">
+                            <p class="from-text">Dari :</p>
+                            <p class="from-value">Mario Putra</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-right card-success vh-100-sm">
+                    <div id="shareDiv">
+                        <div class="card-header">
+                            <img src="assets/img/ic-pembayaran-sukses.png" alt="Sukses" />
+                            <p>Pembayaran Sukses</p>
+                            <p>Terimakasih telah melakukan pembayaran</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-payment-invoice">
+                                <div class="payment-invoice-item">
+                                    <p>Status</p>
+                                    <p>Sukses</p>
+                                </div>
+                                <div class="payment-invoice-item">
+                                    <p>Nomor Invoice</p>
+                                    <p>5009747062</p>
+                                </div>
+                                <div class="payment-invoice-item">
+                                    <p>Nomor Transaksi</p>
+                                    <p>2020051101005198600571946</p>
+                                </div>
+                                <div class="payment-invoice-item">
+                                    <p>Tagihan</p>
+                                    <p>Rp 15.000</p>
+                                </div>
+                                <div class="payment-invoice-item">
+                                    <p>Tanggal Bayar</p>
+                                    <p>06 Februari 2024, 18:05</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center gap-1">
+                            <div class="d-md-flex d-none">
+                                <a href="metode-pembayaran.html" class="btn btn-info btn-submit btn-white">
+                                    Kembali
+                                </a>
+                            </div>
+                            <div class="d-flex flex-1 align-items-center justify-content-end gap-1">
+                                <a id="btnDownload" href="javascript:;" class="btn btn-info btn-submit">
+                                    <img src="assets/img/ic-download.png" class="mb-1" width="16" alt="download">
+                                    Download
+                                </a>
+                                <a id="btnShare" href="javascript:;" class="btn btn-info btn-submit" data-toggle="modal" data-target="#modal-detail">
+                                    <img src="assets/img/ic-share.png" class="mb-1" width="16" alt="share">
+                                    Share
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-box gap-1">
+                    <a href="metode-pembayaran.html" class="btn btn-info btn-submit btn-white">
+                        Kembali
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-detail" tabindex="-1" role="dialog" aria-labelledby="modal-detail" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-start px-4">
+                        <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/ic-close.svg" class="pb-1" width="16">
+                        </a>
+                        <h5 class="modal-title">Share</h5>
+                    </div>
+                    <div class="modal-body px-4">
+                        <div class="list-detail-payment mb-2">
+                            <div class="d-flex align-items-center justify-content-center gap-3">
+                                <a id="shareWhatsapp" class="javascript:;">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="assets/img/ic_share_whatsapp.png" class="img-circle" height="64" width="64" alt="whatsapp" />
+                                        <span class="title-social-media">WhatsApp</span>
+                                    </div>
+                                </a>
+                                <a href="mailto:johndoe@gmail.com">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="assets/img/ic_share_email.png" class="img-circle" height="64" width="64" alt="email" />
+                                        <span class="title-social-media">Email</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/capture-html.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#btnDownload').on('click', function() {
+                CaptureHTML($('#shareDiv')[0], 'bukti-transaksi.png');
+            });
+
+            $('#shareWhatsapp').on('click', function() {
+                let currentUrl = window.location.href;
+                let phoneNumber = '62812xxxxxxxx';
+                let target = `https://wa.me/${phoneNumber}?text=Tagihan%20Narobil%20Pembayaran%20Berhasil%20${currentUrl}`;
+                
+                $(this).attr('href', target);
+            });
+        });
+    </script>
+</body>
+</html>
